@@ -102,7 +102,15 @@
     <artifactId>maven-war-plugin</artifactId>
     <version>3.3.1</version>
 </plugin>
-
+ <build>
+    <plugins>
+        <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.9.1.2184</version> 
+        </plugin>
+    </plugins>
+</build>
 	   <plugin>
         <!-- Unit tests are run by surefires. -->
         <!-- Classes under src/test/java called *Test are included automatically. -->
